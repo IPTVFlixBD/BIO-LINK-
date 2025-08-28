@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>XFireFlixBD - Social Profile</title>
+  <meta name="title" content="XFireFlixBD - Social Profile">
+  <meta name="description" content="XFireFlixBD is your ultimate streaming destination. Watch Live TV, IPTV, and exclusive premium content anytime, anywhere. Join our Telegram community for updates.">
+  <meta name="keywords" content="XFireFlixBD, IPTV, Live TV, Streaming, Bangladesh, Free IPTV, Telegram IPTV, Premium Streaming">
+  <meta name="author" content="XFireFlixBD">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xfireflixbd.pages.dev/">
+  <meta property="og:title" content="XFireFlixBD - Social Profile">
+  <meta property="og:description" content="Your ultimate streaming destination with Live TV, IPTV, and exclusive content.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=600&q=80">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://xfireflixbd.pages.dev/">
+  <meta property="twitter:title" content="XFireFlixBD - Social Profile">
+  <meta property="twitter:description" content="Your ultimate streaming destination with Live TV, IPTV, and exclusive content.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=600&q=80">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+  <style>
+    :root {
+      --telegram-blue: #0088cc;
+      --telegram-light-blue: #40a7e3;
+      --telegram-dark-blue: #006ead;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .telewind-bg {
+      background: linear-gradient(135deg, var(--telegram-blue) 0%, var(--telegram-light-blue) 100%);
+    }
+
+    .telewind-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 25px rgba(0, 136, 204, 0.15);
+    }
+
+    .telewind-btn {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 136, 204, 0.2);
+      box-shadow: 0 4px 6px rgba(0, 136, 204, 0.1);
+    }
+
+    .telewind-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 136, 204, 0.2);
+    }
+
+    /* Ripple effect */
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    /* Floating profile pic */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .profile-pic {
+      animation: float 4s ease-in-out infinite;
+      border: 4px solid white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="p-4">
+
+  <!-- Header -->
+  <div class="text-center mb-8">
+    <div class="flex items-center justify-center space-x-2 mb-2">
+      <i class="fas fa-fire text-4xl text-blue-500"></i>
+      <h1 class="text-3xl font-bold text-blue-600">XFireFlixBD</h1>
+    </div>
+    <p class="text-blue-500 font-medium">Your Ultimate Streaming Destination</p>
+  </div>
+
+  <!-- Profile Card -->
+  <div class="telewind-card rounded-2xl p-6 mb-6 max-w-md w-full">
+    <div class="text-center">
+      <img src="logo/logo.jpg" 
+           alt="XFireFlixBD Logo" class="profile-pic w-24 h-24 rounded-full mx-auto mb-4">
+      <h1 class="text-2xl font-bold text-gray-800">XFireFlixBD</h1>
+      <p class="text-gray-600 mt-2">Providing premium streaming services for free with live TV, IPTV, and exclusive content.</p>
+    </div>
+
+    <div class="flex justify-center mt-4 space-x-6">
+      <div class="text-center">
+        <div class="text-xl font-bold text-blue-500">10K+</div>
+        <div class="text-sm text-gray-500">Users</div>
+      </div>
+      <div class="text-center">
+        <div class="text-xl font-bold text-blue-500">500+</div>
+        <div class="text-sm text-gray-500">Channels</div>
+      </div>
+      <div class="text-center">
+        <div class="text-xl font-bold text-blue-500">24/7</div>
+        <div class="text-sm text-gray-500">Support</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Links -->
+  <div class="space-y-4 max-w-md w-full">
+    <a href="https://xfireflixbd.pages.dev" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fas fa-globe mr-3"></i> Website
+    </a>
+    <a href="https://xfireflix.pages.dev" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fas fa-tv mr-3"></i> Live TV
+    </a>
+    <a href="https://t.me/xfireflix" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fab fa-telegram mr-3"></i> Telegram Community
+    </a>
+    <a href="https://t.me/xfireflixbackup" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fas fa-database mr-3"></i> Telegram Backups
+    </a>
+    <a href="https://t.me/IPTVFlixBD" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fas fa-satellite-dish mr-3"></i> IPTV
+    </a>
+    <a href="https://github.com/IPTVFlixBD" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fab fa-github mr-3"></i> GitHub
+    </a>
+    <a href="https://t.me/abusaeedx" class="telewind-btn w-full flex items-center justify-center py-4 px-6 rounded-xl text-white telewind-bg">
+      <i class="fas fa-user mr-3"></i> Contact
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div class="text-center mt-8 text-gray-600 text-sm">
+    <p>© <span id="year"></span> XFireFlixBD. All rights reserved.</p>
+  </div>
+
+  <script>
+    // Dynamic year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Ripple effect
+    document.querySelectorAll('.telewind-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        let ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+
+        let size = Math.max(this.offsetWidth, this.offsetHeight);
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.offsetX - size/2) + 'px';
+        ripple.style.top = (e.offsetY - size/2) + 'px';
+
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  </script>
+</body>
+</html>
